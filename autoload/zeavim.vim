@@ -212,8 +212,7 @@ function! s:Zeal(docset, query) abort " {{{1
     let ssl = &shellslash
     set noshellslash
 
-    " let l:cmd = has('unix') ? [''] : ['start']
-    let l:cmd = ['']
+    let l:cmd = has('unix') ? [''] : ['start']
 
     " call add(l:cmd, shellescape(g:zv_zeal_executable))
     call add(l:cmd, g:zv_zeal_executable)
